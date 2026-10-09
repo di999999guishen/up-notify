@@ -40,7 +40,7 @@ def main():
     print('\n[2] 老 iesdouyin 接口 /web/api/v2/aweme/post/（不带签名）')
     try:
         r = s.get('https://www.iesdouyin.com/web/api/v2/aweme/post/',
-                  params={'sec_uid': 'MS4wLjABAAAAfLsItSD2WiJrsji1g_iZv-it6W2CcvBFkdUwMjTeSD4', 'count': 10,
+                  params={'sec_uid': 'MS4wLjABAAAAEXAMPLE_ReplaceThisWithRealSecUid', 'count': 10,
                           'max_cursor': 0, 'aid': 1128, '_signature': ''},
                   timeout=20)
         show('2', r)
@@ -50,7 +50,7 @@ def main():
     print('\n[3] 移动端 aweme.snssdk.com /aweme/v1/aweme/post/')
     try:
         r = s.get('https://aweme.snssdk.com/aweme/v1/aweme/post/',
-                  params={'sec_user_id': 'MS4wLjABAAAAfLsItSD2WiJrsji1g_iZv-it6W2CcvBFkdUwMjTeSD4', 'max_cursor': 0,
+                  params={'sec_user_id': 'MS4wLjABAAAAEXAMPLE_ReplaceThisWithRealSecUid', 'max_cursor': 0,
                           'count': 20, 'version_code': '296',
                           'version_name': '2.9.6', 'device_platform': 'android',
                           'os_version': '13', 'aid': 1128},
