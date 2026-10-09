@@ -1,0 +1,23 @@
+{
+  "_说明": "复制成 ups.json 后填写。enabled=false 的条目会被跳过。",
+  "poll_interval": 600,
+  "notify_on_first_run": false,
+  "ups": [
+    {
+      "platform": "bilibili",
+      "uid": "946974",
+      "name": "影视飓风",
+      "enabled": true,
+      "limit": 20
+    },
+    {
+      "platform": "douyin",
+      "sec_uid": "MS4wLjABAAAA_换成你想监控的UP主sec_uid",
+      "name": "示例抖音UP主",
+      "mode": "profile",
+      "enabled": false,
+      "_sec_uid说明": "从主页链接 douyin.com/user/<sec_uid> 里取；也可用 --whois 反查",
+      "_mode说明": "profile=计数监测（零配置）｜full=完整列表（需 .env 配置 DOUYIN_COOKIE）"
+    }
+  ]
+}
